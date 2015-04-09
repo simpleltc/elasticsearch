@@ -13,14 +13,14 @@ This repository contains **Dockerfile** of [Elasticsearch](http://www.elasticsea
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://registry.hub.docker.com/u/dockerfile/elasticsearch/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull dockerfile/elasticsearch`
+2. Download [automated build](https://registry.hub.docker.com/u/simpleltc/elasticsearch-with-head/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull simpleltc/elasticsearch-with-head`
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="dockerfile/elasticsearch" github.com/dockerfile/elasticsearch`)
+   (alternatively, you can build an image from Dockerfile: `docker build -t="simpleltc/elasticsearch-with-head" github.com/simpleltc/elasticsearch`)
 
 
 ### Usage
 
-    docker run -d -p 9200:9200 -p 9300:9300 dockerfile/elasticsearch
+    docker run -d -p 9200:9200 -p 9300:9300 simpleltc/elasticsearch-with-head
 
 #### Attach persistent/shared directories
 
