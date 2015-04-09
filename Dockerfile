@@ -25,9 +25,12 @@ ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
 # Define working directory.
 WORKDIR /data
+Add setup.sh /setup.sh
+
+RUN /elasticsearch/bin/plugin -i mobz/elasticsearch-head
 
 # Define default command.
-CMD ["/elasticsearch/bin/elasticsearch"]
+CMD ["bash", "/setup.sh"]
 
 # Expose ports.
 #   - 9200: HTTP
