@@ -1,2 +1,2 @@
 /elasticsearch/bin/plugin -i mobz/elasticsearch-head
-/elasticsearch/bin/elasticsearch
+/elasticsearch/bin/elasticsearch -Des.config=/data/elasticsearch.yml
